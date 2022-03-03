@@ -1,0 +1,32 @@
+Backend 
+[x] connect mongo db atlas
+[] make db models (look at prev code)
+[] create, read, add delete  user with req.body + mongo db etc
+  [] check why the create route doesnt work !
+  [] double check mongo db so that it works!
+  [] test the api again before making front end!
+[] enable flass with express-sessions  for flash messages 
+
+Front end 
+[] install react (watch the vidoe again!)
+[] install tailwind css
+- pages
+  [] basic landing page
+  [] login 
+  [] log out
+  [] view all snippets
+  [] view the users snippet
+  [] create page
+  [] update page
+  [] delete page
+- components 
+  [] footer
+  [] navbar / header 
+  [] buttons?
+  [] flash-messages
+[] google auth on the react font end
+  [] if user is logged in, show snippets, else ask user to log in! use the resoponse object that comes from google after login!
+  [] User must login upon visiting the website!
+  [] user can see snippets created by other people, but they cannot edit or delete it.
+  [] implememt flash messages for this
+[] lastly: Comment on all code!
