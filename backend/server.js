@@ -6,12 +6,12 @@ import connectDB from './config/mongoose.js'
 import { router } from './routes/router.js'
 import {router as authRouter } from './routes/auth-router.js'
 
-//dotenv.config()
+dotenv.config()
 const port = 5000 || process.env.PORT 
-// connect to database
-//await connectDB()
 // Creates an Express application.
 const app = express()
+// connect to database
+await connectDB()
 
 // base url
 const baseURL = process.env.BASE_URL || '/'
