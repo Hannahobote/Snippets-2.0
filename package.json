@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "updated version of my \"Snippets\" application  made with MERN-stack",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",

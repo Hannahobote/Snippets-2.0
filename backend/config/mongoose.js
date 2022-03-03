@@ -11,7 +11,7 @@ dotenv.config()
  *
  * @returns {Promise} Resolves to this if connection succeeded.
  */
-export const connectDB = async () => {
+const connectDB = async () => {
   // Bind connection to events (to get notifications).
   mongoose.connection.on('connected', () => console.log('Mongoose connection is open.'))
   mongoose.connection.on('error', err => console.error(`Mongoose connection error has occurred: ${err}`))
@@ -33,3 +33,6 @@ export const connectDB = async () => {
     useUnifiedTopology: true
   })
 }
+
+
+export default connectDB
