@@ -1,6 +1,6 @@
 import express from 'express'
-import { HomeController } from '../controllers/homeController.js'
-import { IndexController } from '../controllers/IndexController.js'
+import { HomeController } from '../controllers/home-controller.js'
+import { IndexController } from '../controllers/index-controller.js'
 
 export const router = express.Router()
 const controller = new HomeController()

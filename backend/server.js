@@ -4,6 +4,7 @@ import helmet from 'helmet'
 import logger from 'morgan'
 import connectDB from './config/mongoose.js'
 import { router } from './routes/router.js'
+import {router as authRouter } from './routes/auth-router.js'
 
 //dotenv.config()
 const port = 5000 || process.env.PORT 
@@ -57,6 +58,7 @@ if (app.get('env') === 'production') {
 
 // Register routes.
 app.use('/api', router)
+app.use('/auth', authRouter)
 
 // Starts the HTTP server listening for connections.
 app.listen(process.env.PORT, () => {
