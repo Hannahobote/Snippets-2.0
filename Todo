@@ -1,13 +1,15 @@
 Backend 
+[] install lint! google lint ? the lnu lint?
 [x] connect mongo db atlas
 [] make db models (look at prev code)
+  - username should come from thegoogle username (response object)
 [] create, read, add delete  user with req.body + mongo db etc
   [] check why the create route doesnt work !
   [] double check mongo db so that it works!
   [] test the api again before making front end!
 [] enable flass with express-sessions  for flash messages 
 
-Front end 
+Front end (OBS: do a very simple UI!)
 [] install react (watch the vidoe again!)
 [] install tailwind css
 - pages
@@ -24,9 +26,9 @@ Front end
   [] navbar / header 
   [] buttons?
   [] flash-messages
-[] google auth on the react font end
+- google auth on the react font end
   [] if user is logged in, show snippets, else ask user to log in! use the resoponse object that comes from google after login!
   [] User must login upon visiting the website!
   [] user can see snippets created by other people, but they cannot edit or delete it.
   [] implememt flash messages for this
-[] lastly: Comment on all code!
+[] lastly: jsdoc on all code!
