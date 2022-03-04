@@ -15,7 +15,7 @@ router.get('/snippets/', (req, res, next) => controller.getAll(req,res, next))
 // create one
 // user must be authenticated + be the author of the snippet to edit the snippet. add middleware!
 // url: localhost:5000/api/snippets/
-router.post('/snippets/', (req, res, next) => controller.create(req,res. next))
+router.post('/snippets/', (req, res, next) => controller.create(req,res, next))
 
 // read one
 // url: localhost:5000/api/snippets/:id

@@ -17,6 +17,9 @@ await connectDB()
 const baseURL = process.env.BASE_URL || '/'
 
 app.use(express.json())
+
+// Parse requests of the content type application/x-www-form-urlencoded.
+// Populates the request object with a body object (req.body).
 app.use(express.urlencoded({ extended: false }))
 
 // Set various HTTP headers to make the application little more secure (https://www.npmjs.com/package/helmet).
@@ -33,16 +36,6 @@ app.use(
 
 // Set up a morgan logger using the dev format for log entries.
 app.use(logger('dev'))
-
-
-// Parse requests of the content type application/x-www-form-urlencoded.
-// Populates the request object with a body object (req.body).
-app.use(express.urlencoded({ extended: false }))
-
-if (app.get('env') === 'production') {
-  app.set('trust proxy', 1) // trust first proxy
-  sessionOptions.cookie.secure = true // serve secure cookies
-}
 
 // Middleware to be executed before the routes.
 /*app.use((req, res, next) => {
