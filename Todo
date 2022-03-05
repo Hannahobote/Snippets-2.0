@@ -1,17 +1,19 @@
 Backend 
 [] install lint! google lint ? the lnu lint?
 [x] connect mongo db atlas
-[] make db models (look at prev code)
-  - username should come from thegoogle username (response object)
-[] create, read, add delete  user with req.body + mongo db etc
-  [] check why the create route doesnt work !
-  [] double check mongo db so that it works!
-  [] test the api again before making front end!
-[] enable flass with express-sessions  for flash messages 
+[x] make db models (look at prev code)
+  [] username should come from thegoogle username (response object)
+[x] create, read, add delete  user with req.body + mongo db etc
+  [x] check why the create route doesnt work !
+  [x] double check mongo db so that it works!
+  [x] test the api again before making front end!
+[] enable flash with express-sessions  for flash messages 
 
 Front end (OBS: do a very simple UI!)
-[] install react (watch the vidoe again!)
-[] install tailwind css
+[x] install react (watch the vidoe again!)
+  in the root folder insteall react by -- npx create-react-app@latest frontend
+[x] install tailwind css
+  - build *tailwind npx tailwindcss -i snippets-app/src/App.css -o ./dist/output.css --watch*
 - pages
   [] basic landing page
   [] login 
