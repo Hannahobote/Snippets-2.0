@@ -16,8 +16,8 @@ Front end (OBS: do a very simple UI!)
   - build *tailwind npx tailwindcss -i snippets-app/src/App.css -o ./dist/output.css --watch*
 - pages
   [] basic landing page
-  [] login 
-  [] log out
+  [x] login 
+  [x] log out
     [] upon pressing logout, redirect to the login screen '/'
   [] view all snippets
   [] view the users snippet
