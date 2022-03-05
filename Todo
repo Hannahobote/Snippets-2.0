@@ -18,6 +18,7 @@ Front end (OBS: do a very simple UI!)
   [] basic landing page
   [] login 
   [] log out
+    [] upon pressing logout, redirect to the login screen '/'
   [] view all snippets
   [] view the users snippet
   [] create page
